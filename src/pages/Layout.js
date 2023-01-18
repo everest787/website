@@ -1,12 +1,22 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 
 function Layout() {
+  let navigate = useNavigate(); 
+  const navigateHome = () =>{ 
+    navigate("/");
+  }
+  const navigateAboutMe = () =>{ 
+    navigate("/about");
+  }
   return (
     <>
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <button onClick={navigateHome}>Home</button>
+          </li>
+          <li>
+            <button onClick={navigateAboutMe}>About Me</button>
           </li>
         </ul>
       </nav>
