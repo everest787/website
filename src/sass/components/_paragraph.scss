@@ -1,0 +1,14 @@
+.content {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 10% 90%;
+
+    &__about-me {
+
+    }
+
+    &__pitch-paragraph {
+
+    }
+}

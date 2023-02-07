@@ -1,0 +1,18 @@
+.header {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    &__navigation {
+        grid-column: 2/3;
+        justify-self: center;
+
+    }
+
+    &__contact {
+        grid-column: 3/4;
+        justify-self: right;
+
+    }
+}

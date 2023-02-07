@@ -18,5 +18,14 @@ body {
 }
 
 .container {
-    display: grid;
+    width: 96vw;
+    display: grid;  
+    grid-template-rows: 10rem auto-fit 20rem;
+    grid-template-columns: 40vw 45vw;
+    grid-gap: 20px;
+    
+    margin: 0 auto;
+    & > * {
+        background-color: azure;
+    }
 }
