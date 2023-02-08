@@ -13,19 +13,28 @@ html {
 
 body {
     box-sizing: border-box;
-    padding: 3rem;
+    padding: 0rem;
     background-color: $color-primary;
 }
 
 .container {
     width: 96vw;
-    display: grid;  
-    grid-template-rows: 10rem auto-fit 20rem;
-    grid-template-columns: 40vw 45vw;
-    grid-gap: 20px;
-    
     margin: 0 auto;
-    & > * {
-        background-color: azure;
+    display: grid;
+
+    &__header {
+        grid-template-rows: 10rem;
+        grid-template-columns: 40vw 45vw;
+        background-color: $color-secondary;
+        border-bottom: 3px solid black; 
+
+    }
+
+    &__home {
+        grid-template-rows: auto-fit 20rem;
+        grid-template-columns: 40vw 45vw;
+        background-color: $color-secondary;
+        border-bottom: 3px solid black; 
+
     }
 }
