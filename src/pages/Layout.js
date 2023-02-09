@@ -41,7 +41,26 @@ function Layout() {
 
     <div className="contact-me" id="contact">
       <div className="contact-me__content">
-        POPUP
+        <h2 className="heading-secondary">
+          Contact Me
+        </h2>
+        <h3 className="heading-tertiary">
+          Fill in your name, email, and a message and I will get back to you as soon as I can!
+        </h3>
+
+        <div className="contact-me__form">
+          <form action="#" className="form">
+            <div className="form__group">
+              <input type="text" className="form__input" placeholder="Full Name" id="name" required />
+              <label htmlFor="name" className="form_label">Full Name</label>
+            </div>
+            <div className="form__group">
+              <input type="email" className="form__input" placeholder="Email" id="email" required />
+              <label htmlFor="email" className="form_label">Email Address</label>
+            </div>
+          </form>
+        </div>
+
         <a href="#" className="contact-me__close">&times;</a>
       </div>
     </div>
