@@ -2,7 +2,7 @@ import snowmanPicture from '../img/Snowman.jpg';
 
 function Home() {
   return (
-    <div className="container__home">
+    <div className="container container__home">
       <main className="personal">
         <h1 className="personal__name">
           Chelsea Everest
