@@ -24,7 +24,7 @@ body {
     &__header {
         grid-template-rows: 10rem;
         grid-template-columns: 40vw 45vw;
-        background-color: $color-secondary;
+        background-color: $color-primary;
         border-bottom: 3px solid black; 
         position: fixed;
         width: 100%;

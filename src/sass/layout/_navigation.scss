@@ -5,26 +5,28 @@
 
     }
     &__button {
-        background-color: white;
-        height: 7rem;
-        width: 7rem;
+        background-color: $color-secondary;
+        height: 6rem;
+        width: 6rem;
         position: fixed;
-        
-        top: 2.5rem;
+        top: 1.5rem;
+        margin-left: -3rem;
         border-radius: 50%;
+
         z-index: 2000;
-        box-shadow: 0 1rem 3rem rgba(black, .1);
+        box-shadow: 0 1rem 3rem rgba(black, .2);
         text-align: center;
         cursor: pointer;
 
         
     }
     &__background {
-        height: 6rem;
-        width: 6rem;
+        height: 5rem;
+        width: 5rem;
         border-radius: 50%;
         position: fixed;
-        top: 3rem;
+        top: 2rem;
+        margin-left: -2.5rem;
         background-image: radial-gradient($color-primary, $color-tertiary);
         z-index: 1000;
 
@@ -55,7 +57,7 @@
     }
 
     &__checkbox:checked ~ &__background {
-        transform: scale(35);
+        transform: scale(40);
     }
 
     &__checkbox:checked ~ &__nav {
@@ -65,7 +67,7 @@
 
     &__icon {
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 3rem;
 
         &,
         &::before,
@@ -82,7 +84,7 @@
             content: "";
             position: absolute;
             left: 0;
-            transition: all .2s;
+            transition: all .1s;
 
         }
         &::before {
