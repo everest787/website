@@ -35,8 +35,15 @@ function Layout() {
             </ul>
           </nav>
         </div>
-        <button className="header__contact">Contact Me</button>
+        <a href="#contact" className="header__contact">Contact Me</a>
       </header>
+    </div>
+
+    <div className="contact-me" id="contact">
+      <div className="contact-me__content">
+        POPUP
+        <a href="#" className="contact-me__close">&times;</a>
+      </div>
     </div>
       {/* <nav>
         <table>

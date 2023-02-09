@@ -22,19 +22,14 @@ body {
     margin: 0 auto;
 
     &__header {
-        grid-template-rows: 10rem;
-        grid-template-columns: 40vw 45vw;
         background-color: $color-primary;
         border-bottom: 3px solid black; 
         position: fixed;
-        width: 100%;
         top: 0;
 
     }
 
     &__home {
-        grid-template-rows: auto-fit 20rem;
-        grid-template-columns: 40vw 45vw;
         background-color: $color-secondary;
         border-bottom: 3px solid black; 
 
