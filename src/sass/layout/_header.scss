@@ -2,7 +2,7 @@
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 3.5rem 2rem;
+    padding: 1.5rem 2rem;
 
     &__navigation {
         grid-column: 2/3;
@@ -12,7 +12,43 @@
 
     &__contact {
         grid-column: 3/4;
-        justify-self: right;
+        justify-self: end;
+        top: 0;
+
+        
+        background-color: $color-secondary;
+        border: 1px solid $color-grey-dark-2;
+        color: $color-grey-dark-3;
+        border-radius: 1.5rem;
+        text-decoration: none;
+        font-size: 1.8rem;
+        line-height: 0;
+        font-weight: 400;
+        padding: 2.7rem .4rem; 
+        cursor: pointer; 
+
+        & span {
+            background-color: $color-primary;
+            padding: 1.2rem 1rem; 
+            border: 1px solid $color-grey-dark-2;
+            border-radius: 1rem;
+            transition: all .7s;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 125%;
+                height: 150%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:hover {
+                background-color: transparent;
+                border: 1px solid transparent;
+            }
+        }
 
     }
 }

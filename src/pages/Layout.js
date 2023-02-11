@@ -41,7 +41,11 @@ function Layout() {
             </ul>
           </nav>
         </div>
-        <a href="#contact" className="header__contact">Contact Me</a>
+        <a href="#contact" className="header__contact">
+          <span>
+            Contact Me
+          </span>
+        </a>
       </header>
     </div>
 
