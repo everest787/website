@@ -4,20 +4,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 2rem 2rem;
-    height: 1000px;
-    margin-top: 9rem;
+    height: 100%;
+    margin-top: 8.5rem;
+    border-bottom: 3px double $color-grey-dark-2; 
 
     &__photo {
         grid-column: 2 / 3;
         width: 100%;
         display: block;
         border: .5rem solid black;
-        border-radius: 10%;
+        border-radius: 7rem;
     }
 
     &__name {
         padding: 5rem;
-        font-family: 'Comfortaa';
         font-size: 10rem;
         text-align: center;
         line-height: 12rem;
@@ -26,6 +26,31 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-attachment: fixed;
+
+    }
+}
+
+.content {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    margin: 3rem 1.5rem;
+    padding-bottom: 3rem;
+    height: 1000px;
+
+    &__about-me {
+        padding-top: .5rem;
+        font-size: 2.5rem;
+        line-height: 1rem;
+        font-weight: 700;
+
+    }
+
+    &__pitch-paragraph {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 0 3rem;
 
     }
 }
