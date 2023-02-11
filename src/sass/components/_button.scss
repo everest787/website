@@ -1,0 +1,62 @@
+.navi__button {
+    background-color: $colorful-red;
+    border: 0;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 2rem;
+    padding: 3rem 5rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    transform: rotate(-2deg);
+    margin: 0 2rem;
+
+    &:focus {
+        outline: 0;
+    }
+  
+    &:hover {
+        transform: translate(.2rem, -.2rem) rotate(-2deg);
+        
+        &:after {
+            bottom: .5rem;
+            left: .5rem;
+        }
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #000000;
+        bottom: 1rem;
+        left: 1rem;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+    }
+
+    &__odd {
+        transform: rotate(0deg);
+        &:hover {
+            transform: translate(.2rem, -.2rem) rotate(0deg);
+        }    
+    }
+
+    &__red {
+        background-color: $colorful-red;
+    }
+    &__yellow {
+        background-color: $colorful-yellow;
+    }
+    &__green {
+        background-color: $colorful-green;
+    }
+    &__blue {
+        background-color: $colorful-blue;
+    }
+    &__purple {
+        background-color: $colorful-purple;
+    }
+
+}

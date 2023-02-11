@@ -24,13 +24,19 @@ function Layout() {
           <nav className="navigation__nav">
             <ul className="navigation__list">
               <li className="navigation__item">
-                <button onClick={navigateHome}>Home</button>
+                <button onClick={navigateHome} className="navi__button navi__button__red">Home</button>
               </li>
               <li className="navigation__item">
-                <button onClick={navigateAboutMe}>About Me</button>
+                <button onClick={navigateAboutMe} className="navi__button navi__button__yellow navi__button__odd">About Me</button>
               </li>
               <li className="navigation__item">
-                <button onClick={navigateProjects}>Projects</button>
+                <button onClick={navigateProjects} className="navi__button navi__button__green">Projects</button>
+              </li>
+              <li className="navigation__item">
+                <button className="navi__button navi__button__blue navi__button__odd">Blog</button>
+              </li>
+              <li className="navigation__item">
+                <button className="navi__button navi__button__purple">Something</button>
               </li>
             </ul>
           </nav>
