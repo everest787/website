@@ -12,6 +12,7 @@
     cursor: pointer;
     transform: rotate(-2deg);
     margin: 0 2rem;
+    visibility:hidden;
 
     &:focus {
         outline: 0;

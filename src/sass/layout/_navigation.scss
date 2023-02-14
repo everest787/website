@@ -73,6 +73,10 @@
         width: 100%;
     }
 
+    &__checkbox:checked ~ &__nav > * .navi__button {
+        visibility: visible;
+    }
+
     &__icon {
         position: relative;
         margin-top: 3rem;
