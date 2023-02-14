@@ -1,4 +1,7 @@
 import snowmanPicture from '../img/Snowman.jpg';
+import childhood from '../img/childhood.jpg';
+import hackathon from '../img/hackathon.jpg';
+import maya from '../img/maya.jpg';
 
 function AboutMe() {
     return (
@@ -9,12 +12,10 @@ function AboutMe() {
               This is me!
             </h1>
           </header>
-
-
           <div className="about__content about__content-right">            
             <div className="about__content__img">
               <figure className="about__content__figure">
-                <img src={snowmanPicture} alt="Grade 4"/>
+                <img src={childhood} alt="Grade 4"/>
               </figure>
             </div>
             <p className="about__content__paragraph">
@@ -24,7 +25,7 @@ function AboutMe() {
           <div className="about__content about__content-left">            
             <div className="about__content__img">
               <figure className="about__content__figure">
-                <img src={snowmanPicture} alt="Grade 4"/>
+                <img src={hackathon} alt="Hackathon"/>
               </figure>
             </div>
             <p className="about__content__paragraph">
@@ -34,7 +35,7 @@ function AboutMe() {
           <div className="about__content about__content-right">
             <div className="about__content__img">
               <figure className="about__content__figure">
-                <img src={snowmanPicture} alt="Grade 4"/>
+                <img src={maya} alt="My dog"/>
               </figure>
             </div>
             <p className="about__content__paragraph">

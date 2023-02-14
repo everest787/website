@@ -9,7 +9,8 @@
 
     &__content {
         font-size: 3rem;
-        display: inline-block;
+        display: block;
+        margin-bottom: 4rem;
 
         &-right {
             & > .about__content__img {
@@ -24,7 +25,7 @@
         }  
         
         &__img {
-            background-color: black;
+            background-image: linear-gradient(to right bottom,$color-secondary-dark-2, $color-primary-2, $color-tertiary-dark-2);
             height: 30rem;
             width: 40rem;
             margin: 0 1rem;
@@ -45,7 +46,5 @@
                 clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
             }
         }
-
-
     }
 }
