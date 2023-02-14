@@ -46,18 +46,21 @@
     &__list {
         position: absolute;
         top: 50%;
-        transform: translate(-55%, -50%);
+        width: 100%;
+        transform: translate(-51.5%, -50%);
         list-style: none;
         text-align: center;
 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
         margin-top: 2rem;
         
     }
     &__item {
         margin: 2rem;
+        width: 25%;
         
     }
 
