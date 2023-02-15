@@ -11,6 +11,9 @@ function Layout() {
   const navigateProjects = () =>{ 
     navigate("/projects");
   }
+  const navigateBlog = () =>{ 
+    navigate("/blog");
+  }
   return (
     <>
     <div className="container container__header">
@@ -33,7 +36,7 @@ function Layout() {
                 <button onClick={navigateProjects} className="navi__button navi__button__green">Projects</button>
               </li>
               <li className="navigation__item">
-                <button className="navi__button navi__button__blue navi__button__odd">Blog</button>
+                <button onClick={navigateBlog} className="navi__button navi__button__blue navi__button__odd">Blog</button>
               </li>
               <li className="navigation__item">
                 <button className="navi__button navi__button__purple">Something</button>

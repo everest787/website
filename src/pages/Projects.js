@@ -1,7 +1,9 @@
 function Projects() {
     return (
-      <div className="projects">
-        hehehe
+      <div className="container container__projects">
+        <div className="projects">
+          hehehe
+        </div>
       </div>
     );
   }

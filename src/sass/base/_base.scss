@@ -27,7 +27,6 @@ body {
         position: fixed;
         top: 0;
         z-index: 500;
-
     }
 
     &__home {
@@ -36,6 +35,16 @@ body {
     }
 
     &__about {
+        background-color: $color-secondary;
+        margin-top: 8.5rem;
+    }
+
+    &__projects {
+        background-color: $color-secondary;
+        margin-top: 8.5rem;
+    }
+
+    &__blog {
         background-color: $color-secondary;
         margin-top: 8.5rem;
     }
