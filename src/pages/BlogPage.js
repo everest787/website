@@ -8,7 +8,7 @@ function BlogPage() {
     const [data, setData] = React.useState(null);
 
     React.useEffect(() => {
-        fetch("/api/" + blogId.replace(/ /g,''), {})
+        fetch("/blog/" + blogId.replace(/ /g,''), {})
         .then((res) => res.json())
         .then((response) => {
             setData(response);
@@ -19,9 +19,8 @@ function BlogPage() {
 
 
     return (  
-        <div className="post-container">
-        
-            <div className="blog-page">Test {data ? <BlogDetails blog={data}/> : <Loading />}</div>
+        <div className="container container__blog">
+            <div className="blog-page">{data ? <BlogDetails blog={data}/> : <Loading />}</div>
         </div>
     );
 }

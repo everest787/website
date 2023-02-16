@@ -6,7 +6,7 @@ function Blog() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch("/api", {})
+    fetch("/blog", {})
       .then((res) => res.json())
       .then((response) => {
         setData(response.data);
@@ -19,10 +19,11 @@ function Blog() {
         <div className="blog">
           {data ? 
             data.map((post, index) => (
-              //<BlogPage key={index} index={index} post={post} />
+
               <li key={post.title}>
                 <Link to={post.title}>{post.title}</Link>
               </li>
+
             ))
             : <Loading />}
         </div>
