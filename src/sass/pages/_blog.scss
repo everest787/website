@@ -17,7 +17,7 @@
     }
 
     &__thumbnail {
-        background-color: $color-green;
+        background-color: $color-tertiary-2;
         width: 100%;
         height: 40rem;
         display: flex;
@@ -40,5 +40,46 @@
             align-self: baseline;
             
         }
+    }
+}
+
+.blog-page {
+    background-color: darkblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__blog-details {
+        background-color: $color-tertiary-2;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        margin: 4rem 3rem;
+
+        &__img {
+            width: 90%;
+            height: 20rem;
+            object-fit: cover;
+            align-self: center;
+            margin: 2rem 2rem;
+
+        }
+        &__heading {
+            padding: 1rem 5% 0 5%;
+            font-size: 5rem;
+            
+        }
+        &__content {
+            padding: 3rem 5%;
+            min-height: 35vh;
+            font-size: 2.5rem;
+            
+        }
+        &__date {
+            padding: 0 5%;
+            
+        }
+
     }
 }
