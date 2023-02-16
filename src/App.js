@@ -4,6 +4,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Blog from "./pages/Blog";
+import BlogPage from "./pages/BlogPage";
 import Projects from "./pages/Projects";
 import NoPage from "./pages/NoPage";
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/about" element={<AboutMe />}/>
             <Route path="/projects" element={<Projects />}/>
             <Route path="/blog" element={<Blog />}/>
+            <Route path="/blog/:blogId" element={<BlogPage />}/>
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
