@@ -1,0 +1,44 @@
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: 3rem 6rem;
+    margin: 0 3rem;
+    padding: 4rem 2rem;
+
+    &__link {
+        text-decoration: none;
+
+        &__first {
+            grid-column: 1 / 3;
+        }
+    }
+
+    &__thumbnail {
+        background-color: $color-green;
+        width: 100%;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        &__img {
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+
+        }
+        &__heading {
+            align-self: baseline;
+            margin-left: 10%;
+            
+        }
+        &__date {
+            align-self: baseline;
+            
+        }
+    }
+}

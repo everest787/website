@@ -1,5 +1,6 @@
 import React from "react";
 import Loading from "../components/Loading";
+import BlogThumbnail from "../components/BlogThumbnail";
 import { Link } from "react-router-dom";
 
 function Blog() {
@@ -19,11 +20,14 @@ function Blog() {
         <div className="blog">
           {data ? 
             data.map((post, index) => (
-
-              <li key={post.title}>
-                <Link to={post.title}>{post.title}</Link>
-              </li>
-
+              !index ? 
+              <Link to={post.title} className="blog__link blog__link__first">
+                <BlogThumbnail blog={post}/>
+              </Link>
+              :
+              <Link to={post.title} className="blog__link">
+                <BlogThumbnail blog={post}/>
+              </Link>
             ))
             : <Loading />}
         </div>
