@@ -6,6 +6,7 @@ import AboutMe from "./pages/AboutMe";
 import Blog from "./pages/Blog";
 import BlogPage from "./pages/BlogPage";
 import Projects from "./pages/Projects";
+import ProjectPage from "./pages/ProjectPage";
 import NoPage from "./pages/NoPage";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/about" element={<AboutMe />}/>
             <Route path="/projects" element={<Projects />}/>
+            <Route path="/projects/:projectId" element={<ProjectPage />}/>
             <Route path="/blog" element={<Blog />}/>
             <Route path="/blog/:blogId" element={<BlogPage />}/>
             <Route path="*" element={<NoPage />} />
