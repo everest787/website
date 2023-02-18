@@ -1,0 +1,24 @@
+.hexagon {
+    &__background {
+        background-image: linear-gradient(to right bottom,$color-secondary-dark-2, $color-primary-2, $color-tertiary-dark-2);
+        height: 30rem;
+        width: 40rem;
+        margin: 0 1rem;
+        
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        shape-outside: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+
+    &__figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+
+        img {
+            max-height: 92%;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        }
+    }
+}

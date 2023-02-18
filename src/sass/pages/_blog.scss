@@ -4,7 +4,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-auto-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
-    grid-gap: 3rem 6rem;
+    grid-gap: 4rem 6rem;
     margin: 0 3rem;
     padding: 4rem 2rem;
 
@@ -92,18 +92,24 @@
 }
 
 .blog-page {
+    background-image: url('../../img/beige-background.jpg');
     background-color: $colorful-blue;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
 
     &__blog-details {
-        background-color: $color-tertiary-2;
+        background-color: $color-primary;
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 100%;
-        margin: 4rem 3rem;
+        height: 90%;
+        margin-top: 4rem;
+        margin-bottom: 0;
+        opacity: 0.9;
 
         &__img {
             width: 90%;
@@ -120,7 +126,6 @@
         }
         &__content {
             padding: 3rem 5%;
-            min-height: 35vh;
             font-size: 2.5rem;
             
         }

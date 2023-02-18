@@ -45,7 +45,10 @@ body {
     }
 
     &__blog {
+        background-image: url('../../img/clouds-background.jpg');
         background-color: $colorful-blue;
+        background-repeat: no-repeat;
+        background-size: cover;
         margin-top: 8.5rem;
     }
 }

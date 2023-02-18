@@ -13,8 +13,8 @@ function AboutMe() {
             </h1>
           </header>
           <div className="about__content about__content-right">            
-            <div className="about__content__img">
-              <figure className="about__content__figure">
+            <div className="about__content__img hexagon__background">
+              <figure className="hexagon__figure">
                 <img src={childhood} alt="Grade 4"/>
               </figure>
             </div>
@@ -23,8 +23,8 @@ function AboutMe() {
             </p>
           </div>
           <div className="about__content about__content-left">            
-            <div className="about__content__img">
-              <figure className="about__content__figure">
+            <div className="about__content__img hexagon__background">
+              <figure className="hexagon__figure">
                 <img src={hackathon} alt="Hackathon"/>
               </figure>
             </div>
@@ -33,8 +33,8 @@ function AboutMe() {
             </p>
           </div>
           <div className="about__content about__content-right">
-            <div className="about__content__img">
-              <figure className="about__content__figure">
+            <div className="about__content__img hexagon__background">
+              <figure className="hexagon__figure">
                 <img src={maya} alt="My dog"/>
               </figure>
             </div>
