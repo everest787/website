@@ -17,34 +17,82 @@
     }
 
     &__thumbnail {
-        background-color: $color-tertiary-2;
-        width: 100%;
-        height: 40rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        position: relative;
+        height: 30rem;
+        perspective: 200rem;
+        -moz-perspective: 200rem;
 
-        &__img {
-            width: 80%;
-            height: 80%;
-            object-fit: cover;
+        &:hover &__side--front {
+            transform: rotateY(-180deg);
+        }
+        &:hover &__side--back {
+            transform: rotateY(0);
+        }
 
-        }
-        &__heading {
-            align-self: baseline;
-            margin-left: 10%;
-            
-        }
-        &__date {
-            align-self: baseline;
-            
+        &__side {
+            width: 100%;
+            height: 30rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility: hidden;
+
+            transition: all 1s ease;
+
+            &--front {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                color: $color-grey-dark-3;
+
+                &__img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 2rem;
+                    border: 1px solid black;
+                }
+                &__heading {
+                    position: absolute;
+                    align-self: baseline;
+                    left: 10%;
+                    bottom: 10%;
+                    font-size: 3rem;
+                }
+                &__date {
+                    position: absolute;
+                    align-self: baseline;
+                    left: 10%;
+                    bottom: 5%;
+                    font-size: 1.5rem;
+                }
+            }
+
+            &--back {
+                background-image: linear-gradient(to right bottom, $colorful-yellow, $colorful-purple);
+                transform: rotateY(180deg);
+                border-radius: 2rem;
+                border: 1px solid black;
+
+                &__body {
+                    font-size: 2.5rem;
+                    margin: 4rem 4rem;
+                    color: $color-grey-dark-3;
+
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
         }
     }
 }
 
 .blog-page {
-    background-color: darkblue;
+    background-color: $colorful-blue;
     width: 100%;
     display: flex;
     justify-content: center;
