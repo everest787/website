@@ -54,13 +54,21 @@ function Layout() {
 
     <div className="contact-me" id="contact">
       <div className="contact-me__content">
-        <h2 className="heading-secondary">
+        <h2 className="contact-me__content__heading">
           Contact Me
         </h2>
-        <h3 className="heading-tertiary">
-          Fill in your name, email, and a message and I will get back to you as soon as I can!
+        <h3 className="contact-me__content__heading-secondary">
+          Feel free to shoot me an email at:
         </h3>
+        <h3 className="contact-me__content__heading-tertiary">
+          chelseaeverest7@gmail.com
+        </h3>
+        <h3 className="contact-me__content__heading-secondary">
+          Alternatively, you can find me on LinkedIn:
+        </h3>
+        <a href="https://www.linkedin.com/in/chelsea-everest/" className="contact-me__content__link">Chelsea Everest</a>
 
+{/*
         <div className="contact-me__form">
           <form action="#" className="form">
             <div className="form__group">
@@ -73,6 +81,7 @@ function Layout() {
             </div>
           </form>
         </div>
+*/}
 
         <a href="#" className="contact-me__close">&times;</a>
       </div>
