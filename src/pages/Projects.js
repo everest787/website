@@ -20,7 +20,7 @@ function Projects() {
         <div className="projects">
           {data ? 
             data.map((post, index) => (
-              <Link to={post.title} className="project__link">
+              <Link to={post.title} className="projects__link">
                 <ProjectThumbnail project={post}/>
               </Link>
             ))

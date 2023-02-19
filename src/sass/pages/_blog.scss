@@ -52,6 +52,7 @@
                     object-fit: cover;
                     border-radius: 2rem;
                     border: 1px solid black;
+                    box-shadow: 0 1.5rem 4rem rgba(black, .2);
                 }
                 &__heading {
                     position: absolute;
@@ -74,6 +75,7 @@
                 transform: rotateY(180deg);
                 border-radius: 2rem;
                 border: 1px solid black;
+                box-shadow: 0 1.5rem 4rem rgba(black, .2);
 
                 &__body {
                     font-size: 2.5rem;
