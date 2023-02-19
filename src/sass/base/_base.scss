@@ -35,17 +35,25 @@ body {
     }
 
     &__about {
-        background-color: $color-secondary;
+
+        background-image: linear-gradient(rgba(white, 0.6),rgba($color-green, 0.6)), url(../../img/backgrounds/green-background.jpg);
+        background-size: cover;
+        background-position: top;
+        position: relative;
         margin-top: 8.5rem;
     }
 
     &__projects {
-        background-color: $color-secondary;
+        background-image: url('../../img/backgrounds/paint-background.jpg');
+        background-color: $colorful-blue;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
         margin-top: 8.5rem;
     }
 
     &__blog {
-        background-image: url('../../img/clouds-background.jpg');
+        background-image: url('../../img/backgrounds/clouds-background.jpg');
         background-color: $colorful-blue;
         background-repeat: no-repeat;
         background-size: cover;
