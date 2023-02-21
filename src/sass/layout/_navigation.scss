@@ -18,7 +18,9 @@
         text-align: center;
         cursor: pointer;
 
-        
+        @include respond(phone) { 
+            left: 50%;
+        }  
     }
     &__background {
         height: 5rem;
@@ -31,6 +33,10 @@
         z-index: 1000;
 
         transition: transform 2s cubic-bezier(0.16, 1, 0.3, 1);
+
+        @include respond(phone) { 
+            left: 50%;
+        }  
     }
     &__nav {
         height: 100vh;
@@ -47,7 +53,7 @@
         position: absolute;
         top: 50%;
         width: 100%;
-        transform: translate(-51.5%, -50%);
+        transform: translate(-52%, -50%);
         list-style: none;
         text-align: center;
 
@@ -56,16 +62,39 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 2rem;
+
+        @include respond(phone) { 
+            left: 40%;
+        }  
+        @include respond(big-desktop) { 
+            transform: translate(-51%, -50%);
+        }  
         
     }
     &__item {
         margin: 2rem;
         width: 25%;
+        @include respond(tab-land) { 
+            width: 40%;
+        }     
+        @include respond(tab-port) { 
+            width: 60%;
+        }
+        @include respond(phone) { 
+            width: 80%;
+        } 
         
     }
 
     &__checkbox:checked ~ &__background {
-        transform: scale(40);
+        transform: scale(45);
+
+        @include respond(tab-port) { 
+            transform: scale(35);
+        }      
+        @include respond(big-desktop) { 
+            transform: scale(60);
+        }
     }
 
     &__checkbox:checked ~ &__nav {

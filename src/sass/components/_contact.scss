@@ -17,6 +17,7 @@
         transform: translate(-50%, -50%);
         width: 75%;
         height: 75%;
+        max-height: calc((100vw * 0.75)/2);
 
         background-image: linear-gradient(105deg, 
                                         rgba(white, 0.7) 0%,
@@ -32,8 +33,6 @@
         border: 3px solid $colorful-blue;
         color: $color-grey-dark-3;
 
-
-                
         &__heading {      
             display: block;
             font-size: 6rem;
@@ -41,14 +40,29 @@
             letter-spacing: .3rem;
             margin: 3rem 5rem 2rem;
             line-height: 1;
+            
+            @include respond(tab-land) { 
+                font-size: 4.5rem;
+                line-height: .7;
+            }
+            @include respond(big-desktop) { 
+                font-size: 9rem;
+            }
         }
         &__heading-secondary {
             display: block;
             font-size: 3rem;
             font-weight: 300;
             margin: 2rem 5.5rem;
-            width: 40%;
+            width: 45%;
 
+            @include respond(tab-land) { 
+                font-size: 2rem;
+                margin: 1rem 5.5rem;
+            }
+            @include respond(big-desktop) { 
+                font-size: 4.5rem;
+            }
         }
         &__heading-tertiary {
             display: block;
@@ -57,6 +71,12 @@
             margin: 0 5.5rem;
             width: 40%;
 
+            @include respond(tab-land) { 
+                font-size: 2rem;
+            }
+            @include respond(big-desktop) { 
+                font-size: 4.5rem;
+            }
         }
         &__link {
             display: block;
@@ -66,8 +86,77 @@
             margin: 0 5.5rem;
             width: 40%;
 
+            @include respond(tab-land) { 
+                font-size: 2rem;
+            }
+            @include respond(big-desktop) { 
+                font-size: 4.5rem;
+            }
+
+        }
+        @include respond(tab-port) { 
+            height: 90%;
+            max-height: 100%;
+        
+            background-image: linear-gradient(180deg, 
+                                            rgba($color-primary, 1) 0%,
+                                            rgba($color-primary, 1) 62%,
+                                            transparent 75%), 
+                                            url('../../img/backgrounds/maya-background.jpg');
+            background-color: $color-primary;
+            background-size: 130%;
+    
+        
+            &__heading {
+                text-align: center;
+                font-size: 6rem;
+                line-height: 1;
+            }
+            &__heading-secondary {
+                text-align: center;
+                font-size: 3.2rem;
+                width: 80%;
+                margin: 2.5rem 5.5rem;
+        
+            }
+            &__heading-tertiary {
+                text-align: center;
+                font-size: 2.5rem;
+                width: 80%;
+    
+            }
+            &__link {
+                text-align: center;
+                font-size: 2.5rem;
+                width: 80%;
+        
+            }
+        }
+
+        @include respond(phone) { 
+            height: 70%;
+            background-image: none;
+            background-color: $color-primary;
+        
+            &__heading {
+                font-size: 6rem;
+                margin: 6rem 5rem 2rem;
+            }
+            &__heading-secondary {
+                font-size: 2.5rem;
+        
+            }
+            &__heading-tertiary {
+                font-size: 2rem;
+    
+            }
+            &__link {
+                font-size: 2rem;
+        
+            }
         }
     }
+
 
     // OPEN STATES
 
@@ -87,6 +176,10 @@
             text-decoration: none;
             display: inline-block;
             line-height: 1;
+
+            @include respond(big-desktop) { 
+                font-size: 10rem;
+            }
         }
 
         &:hover {

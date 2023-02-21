@@ -61,6 +61,44 @@
     }
 }
 
+@include respond(tab-port) { 
+    .projects {
+    
+        &__link {
+            width: 80%;
+        }
+        &__thumbnail {
+            grid-template-rows: 1fr 1fr 2fr;
+            height: 15rem;
+            overflow: scroll;
+    
+            &:hover &__img {
+                transform: translateX(0);
+            }
+    
+            &__heading {
+                grid-column: 1/2;
+    
+            }
+            &__date {
+                grid-column: 1/2;
+                grid-row: 2/3;
+                
+            }
+            &__img {
+                grid-column: 2/3;
+                grid-row: 1/3;
+            }
+            &__description {
+                grid-column: 1/-1;
+                grid-row: 3 / -1;
+    
+            }
+    
+        }
+    }
+}
+
 .project-page {
     width: 100%;
     height: 100vh;

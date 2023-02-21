@@ -93,6 +93,65 @@
     }
 }
 
+@include respond(tab-port) { 
+    .blog {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-columns: repeat(2, 1fr);
+
+        &__thumbnail {
+            height: auto;
+    
+            &:hover &__side--front {
+                transform: rotateY(0);
+            }
+    
+            &__side {
+                width: 100%;
+                height: 15rem;
+                position: relative;
+    
+                &--front {
+    
+                    &__img {
+                        border-radius: 0;
+                        border-top-left-radius: 2rem;
+                        border-top-right-radius: 2rem;
+                        height: 100%;
+                    }
+                    &__heading {
+                        left: 7%;
+                        bottom: 30%;
+                    }
+                    &__date {
+                        left: 7%;
+                        bottom: 5%;
+                    }
+                }
+    
+                &--back {
+                    transform: rotateY(0);
+                    border-radius: 0;
+                    border-bottom-left-radius: 2rem;
+                    border-bottom-right-radius: 2rem;
+    
+                    &__body {
+                        font-size: 1.5rem;
+                        margin: 2.5rem 4rem;
+                        -webkit-line-clamp: 4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond(phone) { 
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .blog-page {
     background-image: url('../../img/backgrounds/beige-background.jpg');
     background-color: $color-secondary;
