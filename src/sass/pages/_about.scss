@@ -12,15 +12,26 @@
         display: block;
         margin-bottom: 4rem;
 
-        &-right {
-            & > .about__content__img {
-                float: right;
+        @include respond(tab-port) { 
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-right > .about__content__img {
+            float: right;
+
+            @include respond(tab-port) { 
+                order: 2;
+                align-self: center;
             }
         }
 
-        &-left {
-            & > .about__content__img {
-                float: left;
+        &-left > .about__content__img {
+            float: left;
+
+            @include respond(tab-port) { 
+                order: 2;
+                align-self: center;
             }
         }  
     }

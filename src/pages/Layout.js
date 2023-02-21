@@ -3,15 +3,19 @@ import { Outlet, useNavigate } from "react-router-dom";
 function Layout() {
   let navigate = useNavigate(); 
   const navigateHome = () =>{ 
+    document.getElementById("navi-toggle").checked = false;
     navigate("/");
   }
   const navigateAboutMe = () =>{ 
+    document.getElementById("navi-toggle").checked = false;
     navigate("/about");
   }
   const navigateProjects = () =>{ 
+    document.getElementById("navi-toggle").checked = false;
     navigate("/projects");
   }
   const navigateBlog = () =>{ 
+    document.getElementById("navi-toggle").checked = false;
     navigate("/blog");
   }
   return (
