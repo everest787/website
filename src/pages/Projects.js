@@ -2,17 +2,13 @@ import React from "react";
 import Loading from "../components/Loading";
 import ProjectThumbnail from "../components/ProjectThumbnail";
 import { Link } from "react-router-dom";
+import projectdata from "../data/projects.json";
 
 function Projects() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch("/projects", {})
-      .then((res) => res.json())
-      .then((response) => {
-        setData(response.data);
-      })
-      .catch((error) => console.log(error));
+    setData(projectdata.projects.sort((a, b) => new Date(b.date) - new Date(a.date)));
   }, []);
 
     return (

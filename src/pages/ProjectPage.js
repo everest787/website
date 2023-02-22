@@ -2,19 +2,18 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Loading from "../components/Loading";
 import ProjectDetails from "../components/ProjectDetails";
+import projectdata from "../data/projects.json";
 
 function ProjectPage() { 
     let { projectId } = useParams();
     const [data, setData] = React.useState(null);
 
     React.useEffect(() => {
-        fetch("/projects/" + projectId.replace(/ /g,''), {})
-        .then((res) => res.json())
-        .then((response) => {
-            setData(response);
-        })
-        .catch((error) => console.log(error));
-    }, []);
+        const data = projectdata.projects.filter(
+            function(data){ return data.title.replace(/ /g,'') === projectId }
+        );
+        setData(data[0]);
+      }, [projectId]);
 
 
     return (  
