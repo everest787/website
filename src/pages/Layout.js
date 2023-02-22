@@ -70,7 +70,7 @@ function Layout() {
         <h3 className="contact-me__content__heading-secondary">
           Alternatively, you can find me on LinkedIn:
         </h3>
-        <a href="https://www.linkedin.com/in/chelsea-everest/" className="contact-me__content__link">Chelsea Everest</a>
+        <a href="https://www.linkedin.com/in/chelsea-everest/" className="contact-me__content__link" target="_blank" rel="noreferrer">Chelsea Everest</a>
 
 {/*
         <div className="contact-me__form">
