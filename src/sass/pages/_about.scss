@@ -10,7 +10,7 @@
     &__content {
         font-size: 3rem;
         display: block;
-        margin-bottom: 4rem;
+        padding-bottom: 4rem;
 
         @include respond(tab-port) { 
             display: flex;

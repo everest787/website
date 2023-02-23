@@ -34,6 +34,11 @@ body {
         margin-top: 8.5rem;
     }
 
+    &__loading {
+        background-color: $color-secondary;
+        margin-top: 8.5rem;
+    }
+
     &__about {
         background-image: linear-gradient(rgba(white, 0.6),rgba($color-green, 0.6)), url(../../img/backgrounds/green-background.jpg);
         background-size: cover;
@@ -49,6 +54,7 @@ body {
         background-size: cover;
         background-position: top;
         margin-top: 8.5rem;
+        padding-bottom: 4rem;
     }
 
     &__blog {
