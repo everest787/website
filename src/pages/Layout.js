@@ -18,6 +18,10 @@ function Layout() {
     document.getElementById("navi-toggle").checked = false;
     navigate("/blog");
   }
+  const navigateSomething = () =>{ 
+    document.getElementById("navi-toggle").checked = false;
+    navigate("/something");
+  }
   return (
     <>
     <div className="container container__header">
@@ -43,7 +47,7 @@ function Layout() {
                 <button onClick={navigateBlog} className="navi__button navi__button__blue navi__button__odd">Blog</button>
               </li>
               <li className="navigation__item">
-                <button className="navi__button navi__button__purple">Something</button>
+                <button onClick={navigateSomething} className="navi__button navi__button__purple">Something</button>
               </li>
             </ul>
           </nav>

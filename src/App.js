@@ -8,6 +8,7 @@ import BlogPage from "./pages/BlogPage";
 import Projects from "./pages/Projects";
 import ProjectPage from "./pages/ProjectPage";
 import NoPage from "./pages/NoPage";
+import Something from "./pages/Something";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/about" element={<AboutMe />}/>
             <Route path="/projects" element={<Projects />}/>
+            <Route path="/something" element={<Something />}/>
             <Route path="/projects/:projectId" element={<ProjectPage />}/>
             <Route path="/blog" element={<Blog />}/>
             <Route path="/blog/:blogId" element={<BlogPage />}/>
