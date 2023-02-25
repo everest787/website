@@ -13,14 +13,20 @@ function Projects() {
 
     return (
       <div className="container container__projects">
-        <div className="projects">
-          {data ? 
+        <div className="projects hexagon-background">
+          <div className="projects__content">
+            <h1 className="projects__content__header">
+              Welcome! Check out some of the things I have been working on recently!
+            </h1>
+            {data ? 
             data.map((post, index) => (
-              <Link to={post.title} className="projects__link">
+              <Link to={post.title} className="projects__content__link">
                 <ProjectThumbnail project={post}/>
               </Link>
             ))
             : <Loading />}
+          </div>
+
         </div>
       </div>
     );

@@ -36,7 +36,6 @@ body {
 
     &__loading {
         background-color: $color-secondary;
-        margin-top: $header-height;
     }
 
     &__about {
@@ -48,13 +47,7 @@ body {
     }
 
     &__projects {
-        background-image: url('../../img/backgrounds/paint-background.jpg');
-        background-color: $colorful-blue;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top;
         margin-top: $header-height;
-        padding-bottom: 4rem;
     }
 
     &__blog {

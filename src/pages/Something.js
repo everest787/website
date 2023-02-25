@@ -1,7 +1,7 @@
 function Something() {
   return (
     <div className="container container__home">
-      <div className="something">
+      <div className="something hexagon-background">
         <div className="something__content">
           <h1 className="something__content__header">
             Hello! And welcome to my Something page!

@@ -10,7 +10,7 @@ function ProjectPage() {
 
     React.useEffect(() => {
         const data = projectdata.projects.filter(
-            function(data){ return data.title.replace(/ /g,'') === projectId }
+            function(data){ return data.title.replace(/ /g,'') === projectId.replace(/ /g,'') }
         );
         setData(data[0]);
       }, [projectId]);
@@ -18,7 +18,7 @@ function ProjectPage() {
 
     return (  
         <div className="container container__projects">
-            <div className="project-page">{data ? <ProjectDetails project={data}/> : <Loading />}</div>
+            <div className="project-page lined-background">{data ? <ProjectDetails project={data}/> : <Loading />}</div>
         </div>
     );
 }
