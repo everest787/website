@@ -1,5 +1,4 @@
 import snowmanPicture from '../img/Snowman.jpg';
-import Loading from "../components/Loading";
 
 function Home() {
   return (
