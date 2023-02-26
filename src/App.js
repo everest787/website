@@ -1,5 +1,6 @@
 import './sass/main.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./utilities/ScrollToTop";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />

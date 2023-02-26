@@ -1,3 +1,41 @@
+@mixin bottom-line-break {
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 90%;
+        bottom: 0;
+        left: 5%;
+        border-bottom: 3px double $color-grey-dark-2; 
+    }
+}
+
+@mixin coloured-btn($color, $border) {
+    width: 15rem;
+    height: 8rem;
+    margin-bottom: 4rem;
+
+    background-color: $color-grey-light-1;
+    border: 3px solid $color;
+    border-radius: 1rem;
+    color: $color;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    position: relative;
+    touch-action: manipulation;
+    transition: all .1s;
+    box-shadow: $shadow-light;
+      
+    &:active {
+        background-color: $color;
+        border-color: $border;
+        color: $border;
+        transform: scale(.95);
+    }
+}
+
 // MEDIA QUERY MANAGER
 
 /*

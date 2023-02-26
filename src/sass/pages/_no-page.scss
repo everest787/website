@@ -19,7 +19,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         &__header {
             font-size: 18rem;
@@ -34,29 +33,7 @@
             
         }
         &__home {
-            width: 15rem;
-            height: 8rem;
-            margin-bottom: 4rem;
-
-            background-color: white;
-            border: 3px solid $color-purple;
-            border-radius: 1rem;
-            color: $color-purple;
-            cursor: pointer;
-            font-size: 2rem;
-            font-weight: 600;
-            line-height: 2rem;
-            position: relative;
-            touch-action: manipulation;
-            transition: all .1s;
-            box-shadow: $shadow-light;
-              
-            &:active {
-                background-color: $color-purple;
-                border-color: black;
-                color: black;
-                transform: scale(.95);
-            }
+            @include coloured-btn($color-purple, black);
         }
 
     }
