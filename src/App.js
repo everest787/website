@@ -7,7 +7,7 @@ import AboutMe from "./pages/AboutMe";
 import Blog from "./pages/Blog";
 import BlogPage from "./pages/BlogPage";
 import Projects from "./pages/Projects";
-import ProjectPage from "./pages/ProjectPage";
+import MyWebsite from "./pages/projects/Website";
 import NoPage from "./pages/NoPage";
 import Something from "./pages/Something";
 
@@ -22,9 +22,11 @@ function App() {
             <Route path="/about" element={<AboutMe />}/>
             <Route path="/projects" element={<Projects />}/>
             <Route path="/something" element={<Something />}/>
-            <Route path="/projects/:projectId" element={<ProjectPage />}/>
             <Route path="/blog" element={<Blog />}/>
             <Route path="/blog/:blogId" element={<BlogPage />}/>
+
+            <Route path="/projects/myWebsite" element={<MyWebsite />}/>
+
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
