@@ -6,8 +6,6 @@ function Projects() {
   const website = {
     title: "This Website",
     desc: "Learning CSS, and building a personal website as a place to showcase my future projects!",
-    body: "zdxfcgvh",
-    imgUrl: "https://media.geeksforgeeks.org/img-practice/banner/diving-into-excel-thumbnail.png",
     key: "CSS, React, Javascript",
     date: "2023/02/25"
   }
