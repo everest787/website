@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 
 function Projects() {
   const website = {
-    title: "This website",
-    desc: "A long awaited project that I have not found the time for until now. I learned CSS, and used that knowledge to design a website that I can use for future projects going forward!",
+    title: "This Website",
+    desc: "Learning CSS, and building a personal website as a place to showcase my future projects!",
     body: "zdxfcgvh",
     imgUrl: "https://media.geeksforgeeks.org/img-practice/banner/diving-into-excel-thumbnail.png",
+    key: "CSS, React, Javascript",
     date: "2023/02/25"
   }
 
