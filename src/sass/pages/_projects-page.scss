@@ -1,40 +1,72 @@
-
 .project-page {
     width: 100%;
-    height: 100vh;
+    min-height: calc(100vh - $header-height);
     display: flex;
     justify-content: center;
 
     &__project-details {
-        background-color: $color-primary;
-        display: flex;
+        background-color: $color-secondary;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50vh 50%;
         flex-direction: column;
         width: 80%;
-        height: 90%;
-        margin-top: 4rem;
-        margin-bottom: 0;
-        opacity: 0.9;
+        margin: 4rem;
+        border: 1rem solid $color-grey-dark-3;
+        opacity: 0.95;
 
         &__img {
+            grid-column: 2/3;
+            grid-row: 1/2;
             width: 90%;
-            height: 20rem;
+            height: 100%;
             object-fit: cover;
-            align-self: center;
-            margin: 2rem 2rem;
-
+            align-self: right;
+            margin: 2rem 3.5rem;
+            border: 1px solid $color-grey-dark-3;
+        }
+        &__flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         &__heading {
+            grid-column: 1/2;
+            grid-row: 1/2;
             padding: 1rem 5% 0 5%;
-            font-size: 5rem;
-            
-        }
-        &__content {
-            padding: 3rem 5%;
-            font-size: 2.5rem;
+            font-size: 7rem;
             
         }
         &__date {
-            padding: 0 5%;
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding: 0 6%;
+            
+        }
+        &__key {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding: 0 6%;
+            
+        }
+        &__desc {
+            grid-column: 1/2;
+            grid-row: 1/2;
+            padding: 0 6%;
+            margin: auto 0;
+            font-size: 2rem;
+            
+        }
+        &__content {
+            grid-column: 1/-1;
+            grid-row: 2/3;
+            padding: 4rem 3rem;
+            font-size: 2.5rem;
+
+            &__link {
+                text-decoration: none;
+                color: $color-tertiary-dark-3;
+            }
             
         }
 
