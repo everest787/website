@@ -9,7 +9,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50vh 50%;
-        flex-direction: column;
         width: 80%;
         margin: 4rem;
         border: 1rem solid $color-grey-dark-3;
@@ -24,6 +23,11 @@
             align-self: right;
             margin: 2rem 3.5rem;
             border: 1px solid $color-grey-dark-3;
+
+            @include respond(tab-land) { 
+                width: 80%;
+                margin: 2rem 4.5rem;
+            }
         }
         &__flex-container {
             display: flex;
@@ -70,5 +74,54 @@
             
         }
 
+    }
+
+    @include respond(tab-port) { 
+
+        &__project-details {
+            grid-template-columns: 100%;
+            grid-template-rows: 20rem auto auto;
+    
+            &__img {
+                grid-column: 1/-1;
+                grid-row: 1/2;
+                width: 80%;
+                height: 100%;
+                justify-self: center;
+            }
+            &__heading {
+                grid-row: 2/3;
+                padding: 2rem 4.5rem 0;
+                @include respond(phone) { 
+                    font-size: 4.5rem;
+                }
+                
+            }
+            &__date {
+                grid-row: 2/3;
+                font-size: 1.8rem;
+                padding: 0 8%;
+                @include respond(phone) { 
+                    padding: 0 10%;
+                }
+                
+            }
+            &__key {
+                grid-row: 2/3;
+                font-size: 1.8rem;
+                padding: 0 8%;
+                @include respond(phone) { 
+                    padding: 0 10%;
+                }
+                
+            }
+            &__desc {
+                display: none;
+                
+            }
+            &__content {
+                grid-row: 3/4;
+            }
+        }
     }
 }

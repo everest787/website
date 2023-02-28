@@ -139,19 +139,22 @@
             background-color: $color-primary;
         
             &__heading {
-                font-size: 6rem;
-                margin: 6rem 5rem 2rem;
+                font-size: 4rem;
+                margin: 2rem 3rem;
             }
             &__heading-secondary {
                 font-size: 2.5rem;
+                margin: 2rem 1rem;
         
             }
             &__heading-tertiary {
                 font-size: 2rem;
+                margin: 2rem 1rem;
     
             }
             &__link {
                 font-size: 2rem;
+                margin: 2rem 1rem;
         
             }
         }
@@ -179,6 +182,11 @@
 
             @include respond(big-desktop) { 
                 font-size: 10rem;
+            }
+            
+            @include respond(phone) { 
+                top: 0;
+                right: 1rem;
             }
         }
 

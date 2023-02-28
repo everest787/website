@@ -44,19 +44,16 @@
 }
 
 .content {
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
     display: grid;
     grid-template-columns: 10% 90%;
     padding: 2rem 5% 0;
     position: relative;
     @include bottom-line-break;
-    
-    @include respond(tab-port) { 
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2, auto);
-    }
 
+    @include respond(tab-port) { 
+        grid-template-columns: 15% 85%;
+    }
+    
     &__header {
         font-size: 1.5rem;
         line-height: 2rem;
@@ -72,6 +69,10 @@
         font-size: 2.5rem;
         line-height: 130%;
         padding: 2rem 6rem 4rem 3rem;
+        
+        @include respond(tab-port) { 
+            padding: 2rem 2rem 4rem;
+        }
 
     }
 

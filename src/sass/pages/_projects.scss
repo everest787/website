@@ -35,6 +35,10 @@
         background-position: center;
         box-shadow: $shadow-dark;
 
+        @include respond(tab-port) { 
+            background-image: linear-gradient(160deg,transparent 0%, transparent 52%,rgba(white, 0.85) 52%), $website-url;
+        }
+
         &__heading {
             font-size: 6rem;
             position: absolute;
@@ -42,6 +46,10 @@
             left: 5%;
             z-index: 5;
             color: white;
+
+            @include respond(phone) { 
+                top: 0;
+            }
 
         }
         &__img {
@@ -51,13 +59,23 @@
             object-fit: cover;
             display:none;
         }
-        &__description {
+        &__desc-container {
+            width: 35%;
+            height: 35%;
             position: absolute;
-            top:0;
-            right: 5rem;
-            width: 25rem;
+            bottom: 5%;
+            right: 5%;
+            @include respond(tab-port) { 
+                width: 50%;
+            }
+            @include respond(phone) { 
+                width: 70%;
+                bottom: 2%;
+            }
+        }
+        &__description {
+            position: relative;
             font-size: 2rem;
-            margin-top: 15%;
             text-align: center;
             border: .5rem inset white;
 
@@ -70,6 +88,13 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
+            
+            @include respond(tab-port) { 
+                width: 80%;
+            }
+            @include respond(phone) { 
+                width: 95%;
+            }
             &__date {
                 font-size: 1.5rem;
                 padding-right: 2rem;
