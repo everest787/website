@@ -20,24 +20,3 @@
 .u-margin-top-huge {
     margin-top: 10rem;
 }
-
-.hexagon-background {
-    --s: 2.5rem; /* control the size */
-    background:
-      conic-gradient(at 50% calc(100%/6),$colorful-purple 60deg,#0000 0),
-      conic-gradient(at calc(100%/6) 50%,#0000 240deg,$colorful-purple 0),
-      conic-gradient(from 180deg at calc(100%/6) calc(500%/6),$colorful-purple 60deg,#0000 0),
-      conic-gradient(from 180deg at calc(500%/6),#0000 240deg,$colorful-purple 0) calc(4*.866*var(--s)) 0,
-      repeating-linear-gradient(-150deg,$colorful-red 0 calc(100%/6),#0000   0 50%),
-      repeating-linear-gradient(-30deg, $colorful-yellow 0 calc(100%/6),$color-secondary 0 50%);
-    background-size: calc(6*.866*var(--s)) calc(3*var(--s));
-}
-
-.lined-background {
-    --s: 15rem; /* control the size */
-  
-    background:
-      linear-gradient(135deg,#0000 18.75%,$colorful-purple 0 31.25%,#0000 0),
-      repeating-linear-gradient(45deg,$colorful-purple -6.25% 6.25%, $color-secondary 0 18.75%);
-    background-size: var(--s) var(--s); 
-}

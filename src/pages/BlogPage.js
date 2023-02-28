@@ -17,7 +17,7 @@ function BlogPage() {
 
     return (  
         <div className="container container__blog">
-            <div className="blog-page">{data ? <BlogDetails blog={data}/> : <Loading />}</div>
+            <div className="blog-page stylized-background">{data ? <BlogDetails blog={data}/> : <Loading />}</div>
         </div>
     );
 }

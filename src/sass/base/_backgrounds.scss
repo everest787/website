@@ -1,0 +1,49 @@
+
+.hexagon-background {
+    --s: 2.5rem; /* control the size */
+    background:
+      conic-gradient(at 50% calc(100%/6),$colorful-purple 60deg,#0000 0),
+      conic-gradient(at calc(100%/6) 50%,#0000 240deg,$colorful-purple 0),
+      conic-gradient(from 180deg at calc(100%/6) calc(500%/6),$colorful-purple 60deg,#0000 0),
+      conic-gradient(from 180deg at calc(500%/6),#0000 240deg,$colorful-purple 0) calc(4*.866*var(--s)) 0,
+      repeating-linear-gradient(-150deg,$colorful-red 0 calc(100%/6),#0000   0 50%),
+      repeating-linear-gradient(-30deg, $colorful-yellow 0 calc(100%/6),$color-secondary 0 50%);
+    background-size: calc(6*.866*var(--s)) calc(3*var(--s));
+}
+
+.lined-background {
+    --s: 15rem; /* control the size */
+  
+    background:
+      linear-gradient(135deg,#0000 18.75%,$colorful-purple 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,$colorful-purple -6.25% 6.25%, $color-secondary 0 18.75%);
+    background-size: var(--s) var(--s); 
+}
+
+.waved-background {
+    --s: 50px;
+    --c: #FAEBE3;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#FFCAD4 68% 70%,#0000 72%;
+    background: 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+}
+
+.stylized-background {
+    --s: 60px; /* control the size */
+  
+    --_g: #0000 83%,#F4ACB7 85% 99%,#0000 101%;
+    background:
+      radial-gradient(27% 29% at right ,var(--_g)) calc(var(--s)/ 2) var(--s),
+      radial-gradient(27% 29% at left  ,var(--_g)) calc(var(--s)/-2) var(--s),
+      radial-gradient(29% 27% at top   ,var(--_g)) 0 calc(var(--s)/ 2),
+      radial-gradient(29% 27% at bottom,var(--_g)) 0 calc(var(--s)/-2)
+      $color-brown;
+    background-size: calc(2*var(--s)) calc(2*var(--s));
+}

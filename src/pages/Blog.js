@@ -12,7 +12,7 @@ function Blog() {
   }, []);
 
     return (
-      <div className="container container__blog">
+      <div className="container container__blog waved-background">
         <div className="blog">
           {data ? 
             data.map((post, index) => (
