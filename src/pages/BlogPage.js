@@ -10,7 +10,7 @@ function BlogPage() {
 
     React.useEffect(() => {
         const data = blogdata.blogs.filter(
-            function(data){ return data.title.replace(/ /g,'') === blogId }
+            function(data){ return data.title.replace(/ /g,'').toLowerCase() === blogId.replace(/ /g,'').toLowerCase() }
         );
         setData(data[0]);
       }, [blogId]);

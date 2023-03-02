@@ -44,7 +44,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                color: $color-grey-dark-3;
+                color: $color-grey-light-2;
 
                 &__img {
                     width: 100%;
@@ -54,11 +54,20 @@
                     border: 1px solid black;
                     box-shadow: 0 1.5rem 4rem rgba(black, .2);
                 }
+                &__cover {
+                    width: 100%;
+                    height: 30%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: rgba($color-grey-dark-3,.8);
+                    border-radius: 2rem;
+                }
                 &__heading {
                     position: absolute;
                     align-self: baseline;
                     left: 10%;
-                    bottom: 10%;
+                    bottom: 30%;
                     font-size: 3rem;
                 }
                 &__date {
@@ -158,19 +167,19 @@
     // background-repeat: no-repeat;
     // background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: calc(100vh - $header-height);
     display: flex;
     justify-content: center;
 
     &__blog-details {
-        background-color: $color-primary;
+        background-color: $color-secondary;
         display: flex;
         flex-direction: column;
         width: 80%;
         height: 90%;
-        margin-top: 4rem;
-        margin-bottom: 0;
-        opacity: 0.9;
+        margin: 6rem;
+        opacity: 0.95;
+        border: 1rem solid $color-primary;
 
         &__img {
             width: 90%;
@@ -193,6 +202,10 @@
         &__date {
             padding: 0 5%;
             
+        }
+        &__link {
+            text-decoration: none;
+            color: $color-tertiary-dark-4;
         }
 
     }

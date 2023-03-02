@@ -7,7 +7,7 @@ function Something() {
             Hello! And welcome to my Something page!
           </h1>
           <h2 className="something__content__sub-header">
-            I don't actually know what I want to be on this page yet. I will definitely think of something at a later date, but I like the way the navigation buttons look so I'm going to leave it for now.
+            I don't actually know what I want to be on this page yet. I will definitely think of something at a later date, but I'm going to leave it for now.
           </h2>
         </div>
       </div>
