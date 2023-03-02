@@ -52,6 +52,7 @@ body {
 
     &__blog {
         margin-top: $header-height;
+        min-height: calc(100vh - $header-height);
     }
 }
 

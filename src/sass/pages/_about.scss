@@ -5,12 +5,21 @@
     &__header-text{
         font-size: 5rem;
         font-weight: 700;
+        
+        @include respond(phone) { 
+            font-size: 3rem;
+        }
     }
 
     &__content {
         font-size: 3rem;
         display: block;
         padding: 2rem 3rem;
+
+        @include respond(phone) { 
+            font-size: 2rem;
+            padding: 2rem 1rem;
+        }
 
         &__header {
             text-align: center;
