@@ -17,7 +17,7 @@ function Projects() {
             <h1 className="projects__content__header">
               Welcome! Check out some of the things I have been working on recently!
             </h1>
-            <Link to="/projects/myWebsite" state={{ data: website }} className="projects__content__link">
+            <Link to="/projects/myWebsite" className="projects__content__link">
               <ProjectThumbnail project={website}/>
             </Link>
           </div>

@@ -1,9 +1,6 @@
-import { useLocation } from 'react-router-dom'
 import keyboardPicture from '../../img/projects/keyboard.jpg';
 
 function Website() {   
-    const location = useLocation();
-    const { data } = location.state;
     return (  
         <div className="container container__home">
             <div className="container container__projects">
@@ -11,10 +8,10 @@ function Website() {
                     <div className="project-page__project-details">
                         <img className="project-page__project-details__img" src={keyboardPicture} alt="post" />
                         <div className="project-page__project-details__flex-container">
-                            <h1 className="project-page__project-details__heading">{data.title}</h1>
-                            <h3 className="project-page__project-details__date">{data.date}</h3>
-                            <h3 className="project-page__project-details__key">{data.key}</h3>
-                            <h3 className="project-page__project-details__desc">{data.desc}</h3>
+                            <h1 className="project-page__project-details__heading">This Website</h1>
+                            <h3 className="project-page__project-details__date">2023/02/25</h3>
+                            <h3 className="project-page__project-details__key">CSS, React, Javascript</h3>
+                            <h3 className="project-page__project-details__desc">Learning CSS, and building a personal website as a place to showcase my future projects!</h3>
                         </div>
                         <p className="project-page__project-details__content">
                         &emsp;
