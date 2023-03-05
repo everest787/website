@@ -28,10 +28,9 @@ function AboutMe() {
             I grew up in Sudbury Ontario with a love of animals and technology. 
 
             I would wake up early before school so that I could play 30 minutes of Runescape while 
-            I ate my breakfast, soon after that I started playing a lot of the video games that 
-            I would see my brother playing,
-            and was eventually able to convince my parents to let me have my own xbox after fighting 
-            with my brother for time on it.
+            I ate my breakfast. Soon after that I started playing a lot of the video games that 
+            I would see my brother playingnand was eventually able to convince my parents to let me have my own xbox 
+            after fighting with my brother for time on it.
 
             I didn't pick up programming until Grade 11, when I needed to pick a course between 
             interior design, woodworking, and computer technologies. 
